@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asset Information - SoleX</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="indexlog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dashboard-page">
+    <div class="background-overlay"></div>
+
+    <nav class="dashboard-nav">
+      <div class="nav-left">
+        <a href="indexlogin.html" class="logo">
+          <div class="logo-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 21C12 21 19 16.5 19 10.5C19 4.5 12 3 12 3C12 3 5 4.5 5 10.5C5 16.5 12 21 12 21Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 21V10.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 13L16 9"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name">SoleX</span>
+            <span class="brand-sub">Partners</span>
+          </div>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <a
+          href="indexlogin.html"
+          class="btn btn-outline"
+          style="display: flex; align-items: center; gap: 8px"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Dashboard
+        </a>
+      </div>
+    </nav>
+
+    <main class="dashboard-main" style="text-align: center; padding-top: 100px">
+      <h1 class="welcome-title">Asset Inventory</h1>
+      <p class="edge-desc" style="font-size: 18px; margin-top: 20px">
+        View your complete portfolio of physical and digital solar assets. Track
+        lifecycle metrics and maintenance schedules.
+      </p>
+
+      <div
+        style="
+          margin-top: 60px;
+          padding: 40px;
+          background: rgba(0, 184, 117, 0.05);
+          border: 1px solid rgba(0, 184, 117, 0.2);
+          border-radius: 16px;
+        "
+      >
+        <h3 style="color: white; margin-bottom: 16px; font-size: 24px">
+          Active Installations
+        </h3>
+        <p style="color: var(--text-main); font-size: 18px; line-height: 1.8">
+          3 Commercial Roof Arrays<br />
+          420 High-Efficiency Panels<br />
+          2 Central Inverter Units
+        </p>
+        <div
+          style="
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+          "
+        >
+          <span
+            style="
+              display: inline-block;
+              padding: 6px 12px;
+              border-radius: 20px;
+              background: rgba(0, 184, 117, 0.2);
+              color: var(--primary);
+              font-size: 14px;
+              font-weight: 500;
+            "
+            >All Systems Healthy (100% Uptime)</span
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

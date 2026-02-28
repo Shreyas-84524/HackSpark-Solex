@@ -1,0 +1,422 @@
+.dashboard-page {
+  background-color: var(--bg-dark);
+  position: relative;
+  min-height: 100vh;
+}
+
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2c3e38;
+  background-image: url("Snapchat-690131006.jpg.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--primary);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.user-role {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 500;
+  background: rgba(0, 184, 117, 0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 2px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.notification-btn:hover {
+  color: var(--primary);
+}
+
+.btn-logout {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dashboard Main */
+.dashboard-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.welcome-section {
+  margin-bottom: 60px;
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* SoleX Edge Section */
+.solex-edge-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.edge-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.edge-desc {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.edge-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.edge-card {
+  background-color: rgba(6, 26, 18, 0.6);
+  border: 1px solid rgba(0, 184, 117, 0.15);
+  border-radius: 16px;
+  padding: 24px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.edge-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 184, 117, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: rgba(0, 184, 117, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-stat {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgba(0, 184, 117, 0.1);
+  color: var(--primary);
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.edge-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.edge-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Blog Quote matching */
+.blog-quote {
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #00b875;
+  font-style: italic;
+  line-height: 1.4;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  margin: 60px auto;
+  max-width: 800px;
+}
+.blog-quote::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: #00b875;
+  font-family: serif;
+  line-height: 1;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-top: 60px;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.benefit-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 32px;
+  border-left: 4px solid var(--primary);
+  position: relative;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  box-shadow: 0 4px 12px rgba(0, 184, 117, 0.3);
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.benefit-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.benefit-item svg {
+  flex-shrink: 0;
+  color: var(--primary);
+  margin-top: 3px;
+}
+
+.benefit-item-content strong {
+  color: white;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.benefit-item-content span {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+}
+
+/* Standalone Solex Edge */
+.standalone-edge {
+  background-color: rgba(6, 26, 18, 0.6);
+  border: 1px solid rgba(0, 184, 117, 0.15);
+  border-left: 3px solid var(--primary);
+  border-right: 3px solid var(--primary);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.standalone-edge svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.standalone-edge h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.standalone-edge p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Notification Popup */
+.notification-popup {
+  position: absolute;
+  top: 70px;
+  right: 48px;
+  width: 320px;
+  background-color: #0c1a24;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  overflow: hidden;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-header {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 16px 20px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.notification-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.notification-item.unread {
+  background-color: rgba(0, 184, 117, 0.05);
+}
+
+.notification-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 184, 117, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notification-content p {
+  font-size: 13px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.notification-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
